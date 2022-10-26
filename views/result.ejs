@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Info</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-image: url("https://image.shutterstock.com/image-vector/modern-cinema-background-realistic-film-260nw-1638520528.jpg");
+                background-repeat: no-repeat;
+                background-position: relative;
+                background-size: cover;
+            }
+            .container {
+            width: 500px;
+            border-radius: 10px;
+            justify-content: center;
+            font-family: serif;
+            box-shadow: 5px 8px 12px #888888;
+            background-color: white;
+            
+            }
+        </style>
+    </head>
+    <body>
+    <center><br><br>
+        <div class="container">
+            <h3>Title : <%= title %></h3>
+            <h3>Released on : <%= releaseDate %></h3>
+            <h3>Actors : <%= actors %></h3>
+            <img src = "<%= poster %>">
+            
+        </div>
+    </center>
+    </body>
+</html>
